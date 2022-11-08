@@ -6,12 +6,17 @@ using System.Threading.Tasks;
 
 namespace Aula11
 {
-    internal class Vendedor: Funcionario
+    internal class Vendedor : Funcionario
     {
-        public string Regiao { get; set; }
-        public double Calcular(int comissao)
+        // abristrçao
+        public override string Name
         {
-            return Salario * comissao / 100;
+            get;
         }
+        //public string Regiao { get; set; }
+        //public double Calcular(int comissao)
+        //{
+        //    return Salario * comissao / 100;
+        //}
     }
 }
